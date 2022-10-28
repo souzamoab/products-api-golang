@@ -32,7 +32,7 @@ Password: 123456
 
 ### <b>Postman Collection</b>
 
-* To make the call to the endpoints use the postman collection located in the folder <i>src/app//postman</i>.
+* To make the call to the endpoints use the postman collection located in the folder <b><i>src/app/postman</i></b>.
 
 <br> 
 
