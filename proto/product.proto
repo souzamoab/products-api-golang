@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package pb;
+
+option go_package = "github.com/souzamoab/products-api-golang/pb";
+import "google/protobuf/timestamp.proto";
+
+message Product {
+    int32   ID = 1;
+    string  Title = 2;
+    string  Description = 3;
+    double  Price = 4;
+    int32   Quantity = 5;
+    google.protobuf.Timestamp created_at = 6;
+    google.protobuf.Timestamp updated_at = 7;
+}
+
+message ProductResponse { Product product = 1; }

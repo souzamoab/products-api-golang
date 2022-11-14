@@ -7,7 +7,11 @@ COPY go.mod go.sum ./
 RUN go mod download 
 
 COPY . ./
-COPY main.go ./
+COPY main/server/main.go ./
+
+RUN go get -u github.com/cosmtrek/air
+
+ENTRYPOINT ["air"]
 
 RUN go build -o /server
 

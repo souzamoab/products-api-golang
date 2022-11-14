@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package pb;
+
+option go_package = "github.com/souzamoab/products-api-golang/pb";
+
+message UpdateProductRequest {
+    int32    ID = 1;
+    string    Title = 2;
+    string    Description = 3;
+    double    Price = 4;
+    int32    Quantity = 5;
+}
